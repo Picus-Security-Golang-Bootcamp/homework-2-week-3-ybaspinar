@@ -1,0 +1,67 @@
+[
+  {
+    "bookid": 214145125,
+    "booktitle": "gold",
+    "pages": 123,
+    "stockamount": 123,
+    "price": 123,
+    "stockid": 123,
+    "ısbn": 123,
+    "author": {
+      "authorid": 123,
+      "authorname": "gold"
+    }
+  },
+  {
+    "bookid": 214145125,
+    "booktitle": "gold",
+    "pages": 123,
+    "stockamount": 123,
+    "price": 123,
+    "stockid": 123,
+    "ısbn": 123,
+    "author": {
+      "authorid": 123,
+      "authorname": "gold"
+    }
+  },
+  {
+    "bookid": 214145125,
+    "booktitle": "gold",
+    "pages": 123,
+    "stockamount": 123,
+    "price": 123,
+    "stockid": 123,
+    "ısbn": 123,
+    "author": {
+      "authorid": 123,
+      "authorname": "gold"
+    }
+  },
+  {
+    "bookid": 214145125,
+    "booktitle": "gold",
+    "pages": 123,
+    "stockamount": 123,
+    "price": 123,
+    "stockid": 123,
+    "ısbn": 123,
+    "author": {
+      "authorid": 123,
+      "authorname": "gold"
+    }
+  },
+  {
+    "bookid": 214145125,
+    "booktitle": "gold",
+    "pages": 123,
+    "stockamount": 123,
+    "price": 123,
+    "stockid": 123,
+    "ısbn": 123,
+    "author": {
+      "authorid": 123,
+      "authorname": "gold"
+    }
+  }
+]
