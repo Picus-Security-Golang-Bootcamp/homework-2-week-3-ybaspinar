@@ -39,6 +39,7 @@ func main() {
 		os.Exit(1)
 	}
 	//List(Books)
-	//Search(Books, "")
-	ById(Books, 2)
+	Search(Books, "s")
+	//Get(Books, 2)
+
 }
