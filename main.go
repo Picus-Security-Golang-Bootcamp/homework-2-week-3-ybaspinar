@@ -8,25 +8,21 @@ import (
 )
 
 type Books struct {
-	Bookid      int    `json:"bookid"`
-	Booktitle   string `json:"booktitle"`
-	Pages       int    `json:"pages"`
-	Stockamount int    `json:"stockamount"`
-	Price       int    `json:"price"`
-	Stockid     int    `json:"stockid"`
-	Sbn         int    `json:"ısbn"`
+	Bookid      int     `json:"bookid"`
+	Booktitle   string  `json:"booktitle"`
+	Pages       int     `json:"pages"`
+	Stockamount int     `json:"stockamount"`
+	Price       float64 `json:"price"`
+	Stockid     int     `json:"stockid"`
+	Sbn         int     `json:"ısbn"`
 	Author      struct {
 		Authorid   int    `json:"authorid"`
 		Authorname string `json:"authorname"`
 	} `json:"author"`
+	Available bool `json:"available"`
 }
 
 // List Prints all the books from the
-func List(Books []Books) {
-	for i := 0; i < len(Books); i++ {
-		fmt.Printf("Book %d : %s \n", i+1, Books[i].Booktitle)
-	}
-}
 
 func main() {
 	var Books []Books
