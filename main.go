@@ -39,5 +39,6 @@ func main() {
 		os.Exit(1)
 	}
 	//List(Books)
-	Search(Books, "books.json")
+	//Search(Books, "")
+	ById(Books, 2)
 }
