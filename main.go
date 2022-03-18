@@ -38,5 +38,6 @@ func main() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	List(Books)
+	//List(Books)
+	Search(Books, "books.json")
 }
