@@ -1,0 +1,27 @@
+What is concurrency?
+When you start learning go one way or another you come across a thing called concurrency and you probably heard
+ “Concurrency is about dealing with lots of things at once. Parallelism is about doing lots of things at once.” — Rob Pike’.
+And you are probably confused well in this post I am gonna try to explain concurrency as simple as possible
+Parallelism vs Concurrency 
+In the intro we briefly talk about the difference between parallelism and concurrency, to understand it better we can look into our daily life. Believe it or not in day to day life we use both of these concepts let’s say we are making dinner on the menu we have rice chicken curry and salad when we start cooking we start with rice while it’s cooking we don’t wait idly instead we do something else like curry, and after we have done with curry we prepare the salad. As you can see we are doing lots of things at once at the same time we are preparing rice, curry, and salad. This time let’s create the same menu with parallelism this time while we making let’s get help from our family while we are cooking rice our significant other cooks curry, as you can see there is actually quite a significant difference between concurrency and parallelism.
+A deeper look into concurrency in go
+Goroutines
+Goroutines are lightweight processes managed by go runtime. Because they are managed by runtime they are faster, memory efficient, and easier to use than threads. In go you can create goroutines simply adding the ‘go’ keyword before calling the function
+Example
+func main() {
+ go randomFunction()
+}
+ 
+Channels
+We talk about goroutines and how to create one let’s say we created more than one routine and they need to talk to each other for this go has a built-in type called channels. By default all channels in go are unbuffered this makes it so whenever we send data from goroutine to channel sending routine pauses until another routine reads data from the channel. Go also has buffered channels these channels buffer limited messages without blocking sending routines if buffered channels get full before any reading it will stop sending channels until there’s read from the other side.
+ch := make(chan int) //Unbuffered Channel
+ch := make(chan int, 10) //Buffered Channel
+a := <-ch //Reads a value from channel and assigns to a
+ch <- b// write the value in b to ch
+Further Readings
+https://www.youtube.com/watch?v=oV9rvDllKEg
+https://medium.com/@trevor4e/learning-gos-concurrency-through-illustrations-8c4aff603b3
+https://www.oreilly.com/library/view/learning-go/9781492077206/
+
+
+
